@@ -167,7 +167,7 @@ class KNORAE(BaseDES):
         # corresponding to the first occurrence are returned.
         competences = np.argmax(results_neighbors == 0, axis=1)
 
-        return competences.astype(np.float)
+        return competences.astype(np.float64)
 
     def select(self, competences):
         """Selects all base classifiers that obtained a local accuracy of 100%
